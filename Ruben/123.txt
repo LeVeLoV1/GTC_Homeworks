@@ -1,0 +1,78 @@
+Ладя
+
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+
+if a == c or d == d:
+    print('YES')
+else:
+    print('NO')
+
+_____________________________________________________________
+КОРОЛЬ
+
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+
+if abs(a - c) <= 1 and abs(b - d) <= 1:
+    print('YES')
+else:
+    print('NO')
+______________________________________________________________
+СЛОН
+
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+
+if abs(a - c) == abs(b - d):
+    print('YES')
+else:
+    print('NO')
+________________________________________________________________
+Ферз
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+
+if abs(a - c) == abs(b - d) or a == c or b == d:
+    print('YES')
+else:
+    print('NO')
+_______________________________________
+конь
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+ac = abs(x1 - x2)
+bd = abs(y1 - y2)
+if ac == 1 and bd == 2 or ac == 2 and bd == 1:
+    print('YES')
+else:
+    print('NO')
+
+
+a = int(input())
+b = int(input())
+def e(a,b):
+    while b != 0:
+        a,b=b, a%b
+    return a
+
+print(e(a,b))
+
+def e1(a,b):
+    return a*b//e(a,b)
+
+print (e1(a,b))
+
+
+
+
+num =int(input())
+step =int(input())
+
+def  num_step(num,step):
+    i = 0
+    num_step = 1
+    while i != step:
+        num_step *= num
+        i += 1
+        print (num_step)
+
+num_step(num,step)
